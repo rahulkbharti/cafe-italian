@@ -13,7 +13,8 @@ const PrivateDining = () => {
                     <div className={styles.body}>
                         <p>At Bavette, we specialize in creating memorable dining experiences, whether you're seeking an intimate gathering or a grand celebration. Our private and group dining options are designed to meet your unique needs with personalized service, exceptional food, and a welcoming atmosphere.</p>
                     </div>
-                    <ActionButton />
+                    {/* Added ActionText prop for the button */}
+                    <ActionButton ActionText={"Book Your Event"} />
                 </div>
             </div>
         </div>

@@ -1,61 +1,110 @@
 .followUs {
   margin: 40px 0;
 }
+
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
 }
+
 .title {
-  text-align: left;
+  text-align: center;
 }
+
 .title span {
   color: #fbead2;
   font-family: Oswald;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80%; /* 14.4px */
+  line-height: 80%;
   letter-spacing: 1.98px;
   text-transform: uppercase;
 }
+
 .title h4 {
   color: #fff4e3;
-  text-align: left;
-  /* font-family: Montserrat; */
-  font-size: 90px;
+  text-align: center;
+  font-size: 56px;
   font-style: italic;
   font-weight: 700;
-  line-height: 110%; /* 99px */
-  letter-spacing: -1.8px;
+  line-height: 110%;
+  letter-spacing: -1px;
   margin: 0;
 }
+
 .insta {
   display: inline-flex;
-  padding: 30px 58px;
+  padding: 20px 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border: 0.837px solid #000;
   background: #0a0a0a;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
 }
+
 .insta span {
   color: #fbead2;
-  /* font-family: Oswald; */
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80%; /* 14.4px */
+  line-height: 80%;
   letter-spacing: 1.98px;
   text-transform: uppercase;
 }
+
 .Gellery {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 .Gellery img {
-  width: 25%;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .title h4 {
+    text-align: left;
+    font-size: 90px;
+    letter-spacing: -1.8px;
+  }
+
+  .insta {
+    padding: 30px 58px;
+    width: auto;
+    max-width: none;
+  }
+
+  .insta span {
+    font-size: 18px;
+  }
+
+  .Gellery {
+    margin-top: 60px;
+  }
+
+  .Gellery img {
+    width: 25%;
+  }
 }

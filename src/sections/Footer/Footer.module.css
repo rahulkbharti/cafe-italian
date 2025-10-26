@@ -1,11 +1,9 @@
-/* Main footer wrapper */
 .footer {
   background-color: #000;
-  padding: 60px 20px 20px 20px; /* Padding top, sides, bottom */
+  padding: 60px 20px 20px 20px;
   width: 100%;
 }
 
-/* Inner container to center content */
 .footerContainer {
   display: flex;
   flex-direction: column;
@@ -14,13 +12,12 @@
   margin: 0 auto;
 }
 
-/* Logo styles */
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  color: #ccad64; /* Gold color */
+  color: #ccad64;
 }
 .logo img {
   width: 177px;
@@ -38,17 +35,16 @@
   font-weight: 600;
 }
 
-/* Navigation links */
 .navLinks {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
 }
 
 .navLinks a {
-  color: #fbead2; /* Light cream color */
+  color: #fbead2;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -58,10 +54,9 @@
 }
 
 .navLinks a:hover {
-  color: #ccad64; /* Gold color on hover */
+  color: #ccad64;
 }
 
-/* Social media icon placeholders */
 .socialIcons {
   display: flex;
   gap: 25px;
@@ -69,7 +64,7 @@
 }
 
 .socialIcons a {
-  color: #ccad64; /* Gold color */
+  color: #ccad64;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
@@ -77,25 +72,23 @@
 }
 
 .socialIcons a:hover {
-  color: #fbead2; /* Light cream on hover */
+  color: #fbead2;
 }
 
-/* Separator line */
 .separator {
   width: 100%;
   border: none;
   height: 1px;
-  background-color: rgba(249, 249, 249, 0.15); /* Faint line */
+  background-color: rgba(249, 249, 249, 0.15);
   margin: 40px 0 20px 0;
 }
 
-/* Bottom copyright section */
 .footerBottom {
   width: 100%;
 }
 
 .copyright {
-  color: rgba(249, 249, 249, 0.6); /* Dimmed text color */
+  color: rgba(249, 249, 249, 0.6);
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -103,10 +96,10 @@
 }
 
 .poweredBy {
-  color: #ccad64; /* Gold color */
+  color: #ccad64;
   text-decoration: underline;
   font-weight: 600;
-  background-color: transparent; /* Ensure no bg */
+  background-color: transparent;
 }
 
 .poweredBy:hover {

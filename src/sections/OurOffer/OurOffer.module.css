@@ -1,40 +1,98 @@
 .ourOffer {
+  padding: 40px 0;
 }
+
 .offerItems {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-top: 40px;
 }
+
 .offerItem {
   flex-shrink: 0;
   position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 }
+
+.offerItem img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .offerText {
   color: aliceblue;
   z-index: 5;
   position: absolute;
-  bottom: 150px;
-  left: 100px;
-  width: 400px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
 }
+
 .offerTitle {
   color: #fff4e3;
   text-align: left;
-  /* font-family: Montserrat; */
-  font-size: 90px;
+  font-size: 48px;
   font-style: italic;
   font-weight: 700;
-  line-height: 110%; /* 99px */
-  letter-spacing: -1.8px;
+  line-height: 110%;
+  letter-spacing: -1px;
   margin: 0;
 }
+
 .offerDescription {
   color: #fbead2;
-  /* font-family: Roboto; */
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: 0.54px;
+  line-height: 150%;
+  letter-spacing: 0.48px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+  .offerText {
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+  }
+
+  .offerTitle {
+    font-size: 72px;
+    letter-spacing: -1.5px;
+  }
+
+  .offerDescription {
+    font-size: 18px;
+    -webkit-line-clamp: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offerText {
+    bottom: 150px;
+    left: 100px;
+    width: 400px;
+    right: auto;
+  }
+
+  .offerTitle {
+    font-size: 90px;
+    line-height: 110%;
+    letter-spacing: -1.8px;
+  }
+
+  .offerDescription {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.54px;
+    display: block;
+    -webkit-line-clamp: unset;
+  }
 }

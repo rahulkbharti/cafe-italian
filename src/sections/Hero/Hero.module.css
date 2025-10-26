@@ -1,15 +1,24 @@
 .hero {
-  /* background-image: url(); */
-  background-color: aliceblue;
   height: calc(100vh - 63px);
   position: relative;
   overflow: hidden;
 }
+
+.heroBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .hero video {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -1%;
+  top: 0;
   left: 0;
   object-fit: cover;
   z-index: 0;
@@ -23,24 +32,24 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   color: white;
 }
 
 .heroTextSectionOverlay {
   width: 100%;
-  height: calc(100vh - 163px);
-  /* background-color: red; */
+  height: calc(100% - 100px);
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
 .heroSection {
   display: flex;
-  width: 923px;
+  width: 100%;
+  max-width: 923px;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -50,13 +59,14 @@
   color: #fff4e3;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 130px;
+  font-size: 60px;
   font-style: italic;
   font-weight: 700;
-  line-height: 110%; /* 143px */
-  letter-spacing: -2.6px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
   margin: 0;
 }
+
 .viewMenu {
   display: inline-flex;
   padding: 24px 30px;
@@ -66,4 +76,17 @@
   border: 1px solid #ccad64;
   background: #ccad64;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 130px;
+    letter-spacing: -2.6px;
+  }
 }

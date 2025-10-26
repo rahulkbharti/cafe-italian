@@ -32,7 +32,14 @@ const MonthlyHighlight = () => {
                 <div className={styles.highlightItems}>
                     {highlightItems.map((item, index) => (
                         <div className={styles.highlightItem} key={index}>
-                            <img src={item.imgSrc} alt={`Highlight ${index + 1}`} />
+                            {/* Added a wrapper for the image for better styling */}
+                            <div className={styles.imageWrapper}>
+                                <img
+                                    src={item.imgSrc}
+                                    alt={item.title}
+                                    className={styles.highlightImage}
+                                />
+                            </div>
                             <h4>{item.title}</h4>
                             <span>€ {item.cost}</span>
                         </div>

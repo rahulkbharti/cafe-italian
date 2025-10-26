@@ -1,100 +1,80 @@
 .ourMenu {
-  padding: 60px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   gap: 80px;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .crousal {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 40px;
-}
-.ourMenu {
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 40px;
 }
 
-.crousal {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-}
 .crousalItem {
-  width: 444px;
+  flex: 1 1 300px;
+  max-width: 444px;
   height: 598px;
-  flex-shrink: 0;
   position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+
+.crousalItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.crousalItem:hover img {
+  transform: scale(1.05);
+}
+
 .textBox {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
   color: aliceblue;
   text-align: center;
   width: 100%;
-}
-.textBox h4 {
-  color: #fbead2;
-  text-align: center;
-  /* font-family: Montserrat; */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%; /* 35.2px */
-  margin: 0;
-}
-.textBox span {
-  display: inline-flex;
-  padding: 10px 0 6px 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-.viewMore {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 
-.crousalItem {
-  width: 444px;
-  height: 598px;
-  flex-shrink: 0;
-  position: relative;
-}
-.textBox {
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  color: aliceblue;
-  text-align: center;
-  width: 100%;
-}
 .textBox h4 {
   color: #fbead2;
   text-align: center;
-  /* font-family: Montserrat; */
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%; /* 35.2px */
-  margin: 0;
+  line-height: 110%;
+  margin: 0 0 10px 0;
 }
+
 .textBox span {
-  display: inline-flex;
-  padding: 10px 0 6px 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
+
+.textBox span:hover {
+  border-bottom-color: #fbead2;
+}
+
 .viewMore {
   width: 100%;
   margin: 0 auto;
