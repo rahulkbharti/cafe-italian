@@ -1,0 +1,74 @@
+.Header {
+  /* width: 1710.407px; */
+  height: 101px;
+  flex-shrink: 0;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainMenu {
+  display: inline-flex;
+  align-items: center;
+  gap: 56px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  padding: 10px 0 6px 0;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+.litItem {
+  margin-left: 10px;
+}
+.litItem a {
+  color: #fff;
+  text-align: center;
+  /* font-family: Manrope; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80%; /* 14.4px */
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Logo Section */
+
+.logoSection {
+  width: 177px;
+  height: 101px;
+  flex-shrink: 0;
+  background: url("./logo.png") -18px -0.572px / 131.073% 101.132% no-repeat;
+}
+
+/* Book Table */
+
+.bookTable {
+  display: inline-flex;
+  padding: 24px 30px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ccad64;
+  background: #ccad64;
+  cursor: pointer;
+}
+.bookTable span {
+  color: #282828;
+  /* font-family: Inter; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80%; /* 12.8px */
+  letter-spacing: 1.76px;
+  text-transform: uppercase;
+}
+.bookTable img {
+  width: 16.407px;
+  height: 12.506px;
+}

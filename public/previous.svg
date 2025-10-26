@@ -1,0 +1,8 @@
+<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="29.5" cy="29.5" r="28.75" transform="matrix(-1 0 0 1 59 0)" stroke="#BC995D" stroke-width="1.5"/>
+<path d="M41 29.2534H19.2182" stroke="#BC995D" stroke-width="1.5"/>
+<mask id="path-3-inside-1_1_525" fill="white">
+<path d="M24 23L17.5928 29.2532L24 35.5065"/>
+</mask>
+<path d="M17.5928 29.2532L16.5451 30.3267L15.4451 29.2532L16.5451 28.1798L17.5928 29.2532ZM24 23L25.0477 24.0735L18.6404 30.3267L17.5928 29.2532L16.5451 28.1798L22.9523 21.9265L24 23ZM17.5928 29.2532L18.6404 28.1798L25.0477 34.433L24 35.5065L22.9523 36.58L16.5451 30.3267L17.5928 29.2532Z" fill="#BC995D" mask="url(#path-3-inside-1_1_525)"/>
+</svg>

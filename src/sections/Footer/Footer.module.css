@@ -1,0 +1,114 @@
+/* Main footer wrapper */
+.footer {
+  background-color: #000;
+  padding: 60px 20px 20px 20px; /* Padding top, sides, bottom */
+  width: 100%;
+}
+
+/* Inner container to center content */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #ccad64; /* Gold color */
+}
+.logo img {
+  width: 177px;
+  height: 101px;
+}
+
+.logoIconPlaceholder {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.logoText {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Navigation links */
+.navLinks {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.navLinks a {
+  color: #fbead2; /* Light cream color */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.76px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #ccad64; /* Gold color on hover */
+}
+
+/* Social media icon placeholders */
+.socialIcons {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.socialIcons a {
+  color: #ccad64; /* Gold color */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #fbead2; /* Light cream on hover */
+}
+
+/* Separator line */
+.separator {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: rgba(249, 249, 249, 0.15); /* Faint line */
+  margin: 40px 0 20px 0;
+}
+
+/* Bottom copyright section */
+.footerBottom {
+  width: 100%;
+}
+
+.copyright {
+  color: rgba(249, 249, 249, 0.6); /* Dimmed text color */
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.poweredBy {
+  color: #ccad64; /* Gold color */
+  text-decoration: underline;
+  font-weight: 600;
+  background-color: transparent; /* Ensure no bg */
+}
+
+.poweredBy:hover {
+  text-decoration: none;
+}

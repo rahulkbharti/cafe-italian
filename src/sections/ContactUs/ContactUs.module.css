@@ -1,0 +1,62 @@
+.ContactUs {
+  background-image: url("./pattern.png");
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.boxs {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row; /* This is the default, but good for clarity */
+  flex-wrap: wrap; /* Allows boxes to stack on smaller screens */
+  gap: 40px;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.732);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers the content vertically */
+  gap: 20px; /* Adds space between the title and content */
+
+  /* Replaces fixed width/height with a flexible, responsive setup */
+  flex: 1; /* Each box will grow to fill available space */
+  min-width: 300px; /* Prevents boxes from getting too narrow */
+  min-height: 200px; /* Ensures a minimum height */
+  padding: 30px 20px; /* Internal spacing */
+
+  border: 1px solid rgba(249, 249, 249, 0.09);
+  /* background: rgba(255, 255, 255, 0.02); */
+}
+
+/* This style is ONLY for the title (e.g., "Location") */
+.boxTitle {
+  color: #fbead2;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2; /* Fixed from 80% to prevent overlap */
+  letter-spacing: 1.76px;
+  text-transform: uppercase;
+}
+
+/* This is the NEW base style for content (e.g., address, hours) */
+.boxContent {
+  color: #fbead2;
+  text-align: center;
+  font-size: 22px; /* Larger than the title */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+/* This class OVERRIDES the .boxContent color and size for the phone number */
+.number {
+  color: #ccad64;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}

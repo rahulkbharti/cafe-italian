@@ -1,0 +1,61 @@
+.followUs {
+  margin: 40px 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  text-align: left;
+}
+.title span {
+  color: #fbead2;
+  font-family: Oswald;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%; /* 14.4px */
+  letter-spacing: 1.98px;
+  text-transform: uppercase;
+}
+.title h4 {
+  color: #fff4e3;
+  text-align: left;
+  /* font-family: Montserrat; */
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 110%; /* 99px */
+  letter-spacing: -1.8px;
+  margin: 0;
+}
+.insta {
+  display: inline-flex;
+  padding: 30px 58px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0.837px solid #000;
+  background: #0a0a0a;
+}
+.insta span {
+  color: #fbead2;
+  /* font-family: Oswald; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%; /* 14.4px */
+  letter-spacing: 1.98px;
+  text-transform: uppercase;
+}
+.Gellery {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.Gellery img {
+  width: 25%;
+}

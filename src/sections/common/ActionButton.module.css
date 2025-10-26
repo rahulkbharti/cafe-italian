@@ -1,0 +1,15 @@
+.ActionButton {
+  display: inline-flex;
+  padding: 24px 30px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ccad64;
+  background: #ccad64;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+}
+.ActionButton:hover {
+  background: #b9974f;
+}
